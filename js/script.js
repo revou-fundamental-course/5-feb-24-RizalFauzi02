@@ -20,10 +20,8 @@ function convertTemperature() {
   function reverseSuhu() {
     var fahrenheitInput = parseFloat(document.getElementById("InputAngka").value);
     if (isNaN(fahrenheitInput)) {
-        document.getElementById("InputAngka").value = "";
-        document.getElementById("hasil").value = "";
-        document.getElementById("Kalkulasi").value = "";
-        return;
+      alert("Masukkan angka di kolom Celcius terlebih dahulu baru reverse.");
+      return;
     }
     
     // Rumus Hitung Fahrenheit > Celcius
