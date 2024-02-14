@@ -1,8 +1,7 @@
 function convertTemperature() {
     var celsiusInput = parseFloat(document.getElementById("celsiusInput").value);
+    // Form Validation
     if (isNaN(celsiusInput)) {
-        document.getElementById("hasil").value = "Masukkan angka di kolom Celcius.";
-        document.getElementById("Kalkulasi").value = "";
         return;
     }
     
